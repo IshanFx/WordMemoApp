@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- body {
+body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
@@ -269,14 +269,13 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg-2.png');
+    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 88vh;
 }
 
 header .intro-text {
