@@ -269,14 +269,14 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.resource }}/img/header-bg-2.png');
+    background: linear-gradient(#41295A, #2F0743);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 87vh;
+    height: 88vh;
 }
 
 header .intro-text {
@@ -301,14 +301,26 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+.img-phone{
+    position: absolute;
+    width: 300px;
+    margin-top: 90px;
+}
+
+.img-playstore{
+    
+    width: 200px;
+    margin-top: 10px;
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
-        padding-bottom: 200px;
+       
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         font-family: {{ site.data.template.font.secondary }};
         font-size: 40px;
         font-style: italic;
@@ -725,6 +737,7 @@ section#contact .text-danger {
 footer {
     padding: 25px 0;
     text-align: center;
+    background: #fbfbfb;
 }
 
 footer span.copyright {
@@ -738,8 +751,14 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
+    color:#fff !important;
     font-family: {{ site.data.template.font.primary }};
     line-height: 40px;
+
+}
+
+footer ul.quicklinks a{
+    color: #f39c12 !important;
 }
 
 ul.social-buttons {
